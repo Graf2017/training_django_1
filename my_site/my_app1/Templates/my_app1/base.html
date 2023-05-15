@@ -1,0 +1,19 @@
+{% load my_app1_tags %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<h1><a href="{% url 'mainpage' %}">The name of site</a></h1>
+<body>
+
+
+{% main_menu %}
+
+
+{% block content %}
+{% endblock content %}
+
+</body>
+
+</html>

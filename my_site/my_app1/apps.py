@@ -1,0 +1,7 @@
+from django.apps import AppConfig
+
+
+class MyApp1Config(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'my_app1'
+    verbose_name = 'Додаток 1'

@@ -1,0 +1,9 @@
+
+<ul>
+    {% for point in menu %}
+    <li>
+        <a href="{% url point.url_name %}">{{point.title}}</a>
+    </li>
+    {% endfor %}
+    <a href="{% url 'register' %}">Реєстрація</a> | <a href="{% url 'login' %}">Вхід</a>
+</ul>
